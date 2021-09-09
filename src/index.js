@@ -9,3 +9,7 @@ console.log(typeof testValue1);
 const testValue2 = 1.2;
 console.log(typeof testValue2);
 
+let testValue1 = 1 < 2;
+console.log(typeof testValue1);
+const testValue2 = 1.2;
+console.log(typeof testValue2);
