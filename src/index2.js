@@ -81,3 +81,7 @@ console.log(value3, value4);
 let value5 = true || true;
 let value6 = false || true;
 console.log(value5, value6);
+
+//문자열 연산 -> +로 문자를 연결할 수 있음
+let string12 = "Hello";
+console.log(string12 + " world!");
