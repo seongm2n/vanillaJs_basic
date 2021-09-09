@@ -40,12 +40,12 @@ console.log(null == undefined); //true
 console.log("\t\r\n" == "0"); //true
 console.log("---------");
 //애매한 경우 없이 명확한 답 ,일치연산자(===,!==)만 쓰기로
-console.log("" === "0");
-console.log(0 === "");
-console.log(0 === "0");
-console.log(false === "false");
-console.log(false === "0"); 
-console.log(false === undefined);
-console.log(false === null);
-console.log(null === undefined);
-console.log("\t\r\n" === "0");
+console.log("" === "0"); //false
+console.log(0 === ""); //false
+console.log(0 === "0"); //false
+console.log(false === "false"); //false
+console.log(false === "0"); //false
+console.log(false === undefined); //false
+console.log(false === null); //false
+console.log(null === undefined); //false
+console.log("\t\r\n" === "0"); //false
