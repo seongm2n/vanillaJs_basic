@@ -110,3 +110,21 @@ if (age >= 19) {
   console.log("어린이입니다.");
 }
 
+//조건문 switch case
+let age = 12;
+
+switch (age) {
+  case 12:
+    console.log("12살 입니다.");
+  case 13:
+    console.log("13살 입니다.");
+}
+
+let age1 = 13; 
+
+switch (age1) {
+  case 12:
+    console.log("12살 입니다.");
+  case 13://13만 출력
+    console.log("13살 입니다.");
+}
