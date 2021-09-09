@@ -11,4 +11,8 @@ console.log(parseFloat(1.2)); //부동소수점까지 출력
 console.log(Number(1.2)); 
 console.log(Number("1.2")); //따옴표로 문자열로 만들어도 숫자로 출력
 
+//데이터타입은 number로 표현
+console.log(Number("1.2")); 
+console.log(parseInt("1.2")); //하지만 parseInt를 했을 경우 정수로 반환
+console.log(parseFloat("1.2")); 
 
