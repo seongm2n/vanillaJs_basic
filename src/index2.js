@@ -58,3 +58,13 @@ let value1 = 1;
 console.log(value1++ === 2); // (1) value1 === 2 ->false , (2) value1= value1 + 1 === 2
 console.log(++value1 === 3); // (3) value1 +  1 === 3 -> true
 
+//대입연산자
+let value10 = 1;
+value10 = 1;
+console.log(value10);//1
+value10 -= 1; // value10 = value10 - 1
+console.log(value10); // 0
+value10 *= 5; // value10 = value10 * 5
+console.log(value10);// 0 
+value10 /= 5; // value10 = value10 / 5
+console.log(value10); // 0
