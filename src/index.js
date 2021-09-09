@@ -1,3 +1,5 @@
+//변수 선언, 데이터 타입
+
 //변수 선언
 let testValue;
 testValue = 1;
