@@ -51,3 +51,4 @@ console.log(typeof testSymbol1, testSymbol2);
 
 console.log(testSymbol1 == testSymbol2);
 console.log(testSymbol1 === testSymbol2);
+
