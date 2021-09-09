@@ -16,3 +16,6 @@ console.log(Number("1.2"));
 console.log(parseInt("1.2")); //하지만 parseInt를 했을 경우 정수로 반환
 console.log(parseFloat("1.2")); 
 
+//
+console.log(String(1.2)); 
+console.log(typeof String(1.2), String(1.2)); //문자열 확인
