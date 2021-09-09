@@ -18,3 +18,6 @@ let testValue1 = 1 < 2;
 console.log(testValue1, typeof testValue1);
 const testValue2 = 1.2;
 console.log(typeof testValue2);
+
+let testValue;
+console.log(typeof testValue, testValue);
