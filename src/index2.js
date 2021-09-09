@@ -49,3 +49,9 @@ console.log(false === undefined); //false
 console.log(false === null); //false
 console.log(null === undefined); //false
 console.log("\t\r\n" === "0"); //false
+
+//++연산자 (js, c언어)
+let value1 = 1;
+console.log(value1++ === 2); // (1) value1 === 2 ->false , (2) value1= value1 + 1 === 2
+console.log(++value1 === 3); // (3) value1 +  1 === 3 -> true
+
