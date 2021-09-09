@@ -85,3 +85,9 @@ console.log(value5, value6);
 //문자열 연산 -> +로 문자를 연결할 수 있음
 let string12 = "Hello";
 console.log(string12 + " world!");
+
+//조건문
+let age = 19;
+if (age >= 19) {
+  console.log("성인입니다");
+}
