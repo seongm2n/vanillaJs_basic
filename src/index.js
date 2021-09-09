@@ -21,3 +21,8 @@ console.log(typeof testValue2);
 
 let testValue;
 console.log(typeof testValue, testValue);
+
+let testValue = null;
+console.log(typeof testValue, testValue);
+let testValue2;
+console.log(typeof testValue2, testValue2);
