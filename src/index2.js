@@ -86,8 +86,18 @@ console.log(value5, value6);
 let string12 = "Hello";
 console.log(string12 + " world!");
 
-//조건문
+//조건문 if
 let age = 19;
 if (age >= 19) {
   console.log("성인입니다");
 }
+
+//조건문 else
+let age = 18;
+if (age >= 19) {
+  console.log("성인입니다");
+} else {
+  console.log("청소년입니다.");
+}
+
+
