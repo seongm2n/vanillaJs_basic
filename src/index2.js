@@ -128,3 +128,16 @@ switch (age1) {
   case 13://13만 출력
     console.log("13살 입니다.");
 }
+
+//조건문 switch case, break, default
+let age = 14;
+
+switch (age) {
+  case 12:
+    console.log("12살 입니다.");
+  case 13:
+    console.log("13살 입니다.");
+    break;
+  default:
+    console.log("매칭되는 나이가 없습니다."); //case12,13이 맞지 않아 default값 출력
+}
