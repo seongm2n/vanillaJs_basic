@@ -68,3 +68,16 @@ value10 *= 5; // value10 = value10 * 5
 console.log(value10);// 0 
 value10 /= 5; // value10 = value10 / 5
 console.log(value10); // 0
+
+//논리연산자
+// !:NOT
+let value2 = false;
+console.log(!value2);
+// && : AND -> 조건) 둘 다 true일때
+let value3 = true && true;
+let value4 = false && true;
+console.log(value3, value4);
+// || : OR -> 조건) 둘 중 하나 true일때
+let value5 = true || true;
+let value6 = false || true;
+console.log(value5, value6);
