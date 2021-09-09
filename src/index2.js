@@ -100,7 +100,7 @@ if (age >= 19) {
   console.log("청소년입니다.");
 }
 
-//조건문 else if
+//조건문 if-else
 let age = 12;
 if (age >= 19) {
   console.log("성인입니다");
@@ -110,7 +110,7 @@ if (age >= 19) {
   console.log("어린이입니다.");
 }
 
-//조건문 switch case
+//조건문 switch/case
 let age = 12;
 
 switch (age) {
@@ -129,7 +129,7 @@ switch (age1) {
     console.log("13살 입니다.");
 }
 
-//조건문 switch case, break, default
+//조건문 switch/case/break/default
 let age = 14;
 
 switch (age) {
@@ -137,7 +137,7 @@ switch (age) {
     console.log("12살 입니다.");
   case 13:
     console.log("13살 입니다.");
-    break;
+    break; //case문에서 break를 해주지 않으면, 다음 case문 및 default문도 실행하게 됨
   default:
     console.log("매칭되는 나이가 없습니다."); //case12,13이 맞지 않아 default값 출력
 }
