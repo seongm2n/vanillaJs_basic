@@ -141,3 +141,4 @@ switch (age) {
   default:
     console.log("매칭되는 나이가 없습니다."); //case12,13이 맞지 않아 default값 출력
 }
+
