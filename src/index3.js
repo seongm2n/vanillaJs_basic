@@ -6,3 +6,10 @@ function FunCoding(name) {
 }
 
 FunCoding("seongmin");
+
+//return 키워드 사용
+function FunCoding(name) {
+  return 'Hi!' + name;
+}
+
+console.log(FunCoding("seongmin"));
