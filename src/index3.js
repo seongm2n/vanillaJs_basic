@@ -146,4 +146,17 @@ const user = {
 };
 console.log(user.details.get_hobby());
 
-// 2. 객체 메서드 선언에 화살표함수를 사용해도 
+// 2. 객체 메서드 선언에 화살표함수를 사용해도 됨
+const
+  age: 10,
+  name: "seongmin",
+  details: {
+    hobby: "coding",
+    major: "logistics",
+    get_hobby: () => 'coding' //arrow함수 안에서 값을 직접 지칭
+    get_hobby: () => this.hobby // 에러 , arrow 함수안에서 this라는 키워드는 객체를 지칭하도록 매핑되지 않기 때문에 쓸 수 없다.
+  }
+};
+console.log(user.details.get_hobby());
+
+//
