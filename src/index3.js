@@ -147,16 +147,51 @@ const user = {
 console.log(user.details.get_hobby());
 
 // 2. 객체 메서드 선언에 화살표함수를 사용해도 됨
-const
+const user = {
   age: 10,
   name: "seongmin",
   details: {
     hobby: "coding",
     major: "logistics",
     get_hobby: () => 'coding' //arrow함수 안에서 값을 직접 지칭
+  }
+};
+console.log(user.details.get_hobby());
+
+// 화살표함수에서는 this가 없음
+const user = {
+  age: 10,
+  name: "seongmin",
+  details: {
+    hobby: "coding",
+    major: "logistics",
     get_hobby: () => this.hobby // 에러 , arrow 함수안에서 this라는 키워드는 객체를 지칭하도록 매핑되지 않기 때문에 쓸 수 없다.
   }
 };
 console.log(user.details.get_hobby());
 
-//
+//gette(획득자)와 setter(설정자)
+//getter는 프로퍼티 값을 접근할 때(읽을 때) 호출되는 메서드
+//setter는 프로퍼티 값을 수정할 때(설정할 때) 호출되는 메서드
+//getter 선언시 인자가 없어야 하고, setter 선언시 인자가 반드시 하나 있어야 함
+get prop(인자없음) {
+  ...
+}
+set prop(한개의 인자) {
+  ...
+}
+//getter는 함수처럼 괄호를 붙이지 않고, 프로퍼티처럼 호출
+//setter는 함수처럼 괄호를 붙이지 않고, '='을 사용해서 값을 
+const user = {
+  age : 10,
+  name : "seongmin",
+  get get_age(){
+    return this.age;
+  },
+  set set_age(value){
+    this.age = value;
+  }
+};
+console.log(user.get_age);
+user.set_age = 20;
+console.log(user.get_age);
