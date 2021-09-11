@@ -104,4 +104,15 @@ console.log(user.age); //20
 console.log(user.name); // seongmin
 console.log(user.get_data()); //3
 
+// 빈 객체 선언 후 프로퍼티와 메서드 추가 가능
+const emptyObject = {};
+
+emptyObject.name = 'Seongmin';
+emptyObject.age = 10;
+emptyObject.get_data = function() {
+  return 1+2;
+};
+
+console.log(emptyObject.age, emptyObject.name, emptyObject.get_data());
+
 
