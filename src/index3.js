@@ -207,7 +207,26 @@ const user = new Object();
  }
  console.log(user.age, user.name,user.get_data());
   
- //JS 객체 생성 방법3 : 생성자 함수로 생성하는 방식
- //생성자 함수는 함수를 의미함
- //new 함수()를 쓰면, 객체처럼 사용 가능
+//JS 객체 생성 방법3 : 생성자 함수로 생성하는 방식
+//생성자 함수는 함수를 의미함
+//new 함수()를 쓰면, 객체처럼 사용 가능
+//참고로만 알아두기
+ function User(age,name){
+   this.age = age;
+   this.name = name;
+   this.get_data = function(){
+     return this.age;
+    }
+ }
+const seongmin = new User(10, "seongmin");
+console.log(typeof seongmin);
+console.log(seongmin.age, seongmin.get_data());
+  
+//프로토타임
+//생성자 함수에 프로퍼티 또는 메서드 정의 가능
+//'객체이름.prototype.프로퍼티명 = 코드'와 같이 사용 가능
+
+  
+  
+  
   
