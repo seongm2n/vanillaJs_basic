@@ -195,3 +195,19 @@ const user = {
 console.log(user.get_age);
 user.set_age = 20;
 console.log(user.get_age);
+  
+//JS 객체 생성 방법2 : newObject()로 생성하는 방식
+//기본 객체인 Object()를 기반으로 생성하는 방식
+//참고로만 알아두기, ES6 이전 Javascript 언어조차 객체리터럴 방식을 권장
+const user = new Object();
+ user.age = 10;
+ user.name = "seongmin";
+ user.get_data = function(){
+   return 1+2;
+ }
+ console.log(user.age, user.name,user.get_data());
+  
+ //JS 객체 생성 방법3 : 생성자 함수로 생성하는 방식
+ //생성자 함수는 함수를 의미함
+ //new 함수()를 쓰면, 객체처럼 사용 가능
+  
