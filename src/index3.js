@@ -225,7 +225,18 @@ console.log(seongmin.age, seongmin.get_data());
 //프로토타임
 //생성자 함수에 프로퍼티 또는 메서드 정의 가능
 //'객체이름.prototype.프로퍼티명 = 코드'와 같이 사용 가능
+function User(age,name){
+  this.age = age;
+  this.name = name;
+}
+User.prototype.message = function(){
+  return 'Hello';
+}
+User.prototype.hobby = 'coding';
 
+const seongmin = new User(10, 'seongmin');
+console.log(seongmin.age,seongmin.name, seongmin.hobby );
+console.log(seongmin.message());
   
   
   
