@@ -1,13 +1,20 @@
 //함수와 객체
 
-//함수 선언 기법
+//함수 기본 1
 function FunCoding(name) {
   console.log(name);
 }
 
 FunCoding("seongmin");
 
-//return 키워드 사용
+// 함수 기본 2
+function FunCoding(name) {
+  console.log('Hi, ' + name + '!');
+}
+
+FunCoding("seongmin");
+
+// 함수 기본 2 ->  return 키워드 사용
 function FunCoding(name) {
   return 'Hi!' + name;
 }
