@@ -80,5 +80,17 @@ const 객체이름 = {
   .
 };
 
+//객체예시1
+const user = {
+  age: 20,
+  name: "seongmin"
+};
+console.log(typeof user, user); // object -> {age:20, name:"seongmin"}
+console.log(user.age); //20
+console.log(user.name); // seongmin
+user.age = 25; //해당 프로퍼티 수정
+console.log(user.age); //25
+
+//
 
 
