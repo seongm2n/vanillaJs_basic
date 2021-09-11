@@ -38,3 +38,10 @@ let func3 = () => {
 }
 func3();
 
+//
+let func = function (item1, item2) {
+  return item1 * item2;
+};
+
+let func2 = (item1, item2) => item1 * item2;
+console.log(func2(1, 2));
