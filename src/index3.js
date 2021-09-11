@@ -126,6 +126,24 @@ const user = {
       return item * 2;
     }
   }
-}
+};
 console.log(user.age, user.name, );
 console.log(user.details.hobby, user.details.major, user.details.get_details(2));
+
+//객체 리터럴 사용시 유의사항
+// 1. 객체 리터럴과 this키워드
+//this 키워드는 자신의 객체를 가리킴
+const user = {
+  age: 10,
+  name: "seongmin",
+  details: {
+    hobby: "coding",
+    major: "logistics",
+    get_hobby: function () {
+      return this.hobby;
+    }
+  }
+};
+console.log(user.details.get_hobby());
+
+// 2. 객체 메서드 선언에 화살표함수를 사용해도 
