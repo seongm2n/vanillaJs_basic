@@ -1,4 +1,4 @@
-//함수와 객체
+//함수
 
 //함수 기본 1
 function FunCoding(name) {
