@@ -91,6 +91,17 @@ console.log(user.name); // seongmin
 user.age = 25; //해당 프로퍼티 수정
 console.log(user.age); //25
 
-//
+//객체예시2->메서드
+const user = {
+  age: 20,
+  name: "seongmin",
+  get_data: function(){ 
+    return 1+2;
+  }
+};
+console.log(typeof user, user); // object -> {age:20, name:"seongmin"}
+console.log(user.age); //20
+console.log(user.name); // seongmin
+console.log(user.get_data()); //3
 
 
