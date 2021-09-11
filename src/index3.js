@@ -115,4 +115,17 @@ emptyObject.get_data = function() {
 
 console.log(emptyObject.age, emptyObject.name, emptyObject.get_data());
 
-
+//객체 안에서 객체를 정의 가능
+const user = {
+  age: 10,
+  name: "Dave",
+  details: {
+    hobby: "coding",
+    major: "logistic",
+    get_details: function(item){
+      return item * 2;
+    }
+  }
+}
+console.log(user.age, user.name, );
+console.log(user.details.hobby, user.details.major, user.details.get_details(2));
