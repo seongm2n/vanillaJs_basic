@@ -309,3 +309,23 @@ class User extends Animal {
 }
 const seongmin = new User('Seongmin', 27);
 console.log(seongmin.name, seongmin.age, seongmin.get_message());
+
+//hasOwnProperty()사용법
+//클래스명.prototype.프로퍼티 = 프로퍼티 값 으로도 클래스 외부에서 프로퍼티 추가 가능
+//클래스 내부에서 선언한 프로퍼티임을 확인하기 위해 hasOwnProperty(프로퍼티명)을 사용할 수 있음
+//해당 메서드 가끔 언급
+class Animal {
+  constructor(name){
+    this.name = name;
+  }
+  get_message(){
+    return 'Hello';
+  }
+}
+
+Animal.prototype.age = 10;
+
+const seongmin = new Animal('Seongmin');
+console.log(seongmin.hasOwnProperty('name')); //내부 선언 -> true
+console.log(seongmin.hasOwnProperty('age'));  //외부 선언 -> false
+console.log(seongmin.hasOwnProperty('get_message()'));  //프로퍼티가 아니라 메서드라  -> false
