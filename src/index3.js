@@ -247,8 +247,14 @@ class User1 {
     this.name = 'seongmin'; //클래스 프로퍼티는 constructor 내부에서 this 키워드로 선언될 수 있음
     this.age = 27;
   }
+  get_message(){ // 클래스 내부에서 메서드 선언 가능
+    return 'Hello!';
+  }
 }
 //class로 정의된 클래스는 new 클래스명()으로 객체 생성될 수 있음
 const seongmin = new User1();
-console.log(typeof seongmin, seongmin.name, seongmin.age);
+console.log(typeof seongmin, seongmin.name, seongmin.age, seongmin.get_message());
+  
+  
+  
 
