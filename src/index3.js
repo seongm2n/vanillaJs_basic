@@ -237,7 +237,18 @@ User.prototype.hobby = 'coding';
 const seongmin = new User(10, 'seongmin');
 console.log(seongmin.age,seongmin.name, seongmin.hobby );
 console.log(seongmin.message());
-  
-  
-  
-  
+
+// 클래스 정의
+// class 클래스명 {}으로 클래스 정의 가능
+// constructor(): 클래스 셍성자 함수
+
+class User1 {
+  constructor(){
+    this.name = 'seongmin'; //클래스 프로퍼티는 constructor 내부에서 this 키워드로 선언될 수 있음
+    this.age = 27;
+  }
+}
+//class로 정의된 클래스는 new 클래스명()으로 객체 생성될 수 있음
+const seongmin = new User1();
+console.log(typeof seongmin, seongmin.name, seongmin.age);
+
