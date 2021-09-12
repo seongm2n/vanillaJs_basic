@@ -269,4 +269,22 @@ class User1 {
 const seongmin = new User1('seongmin', 27);
 console.log(typeof seongmin, seongmin.name, seongmin.age, seongmin.get_message());
 
+//상속도 일반적인 객체 지향 문법과 유사
+//extends로 상속할 클래스를 선언
+//자식 클래스에서는 super()를 constructor()안에서 호출
+//super()는 부모클래스의 constructor()를 호출
+class Animal {
+  constructor(name){
+    this.name = name;
+  }
+}
+class User extends Animal {
+  constructor (name, age){
+    super(name);
+    this.age = age;
+  }
+}
+const seongmin = new User('Seongmin', 27);
+console.log(seongmin.name, seongmin.age);
+
 //
