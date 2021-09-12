@@ -255,6 +255,18 @@ class User1 {
 const seongmin = new User1();
 console.log(typeof seongmin, seongmin.name, seongmin.age, seongmin.get_message());
   
-  
-  
+// 객체 생성시 인자 정의는 constructor에서 할 수 있음
+class User1 {
+  constructor(name, age){ 
+    this.name = name;
+    this.age = age;
+  }
+  get_message(){
+    return 'Hello!';
+  }
+}
 
+const seongmin = new User1('seongmin', 27);
+console.log(typeof seongmin, seongmin.name, seongmin.age, seongmin.get_message());
+
+//
