@@ -287,4 +287,25 @@ class User extends Animal {
 const seongmin = new User('Seongmin', 27);
 console.log(seongmin.name, seongmin.age);
 
-//
+// 객체지향의 다형성
+//부모클래스의 메서드명과 동일하지만, 자식 클래스에서 해당 메서드를 덮어씌워 다른 동작을 할 수 있는 기능도 지원
+class Animal {
+  constructor(name){
+    this.name = name;
+  }
+  get_message() {
+    return "Hello";
+  }
+}
+
+class User extends Animal {
+  constructor(name, age) {
+    super(name);
+    this.age = age;
+  }
+  get_message(){
+    return "Hello World!";
+  }
+}
+const seongmin = new User('Seongmin', 27);
+console.log(seongmin.name, seongmin.age, seongmin.get_message());
