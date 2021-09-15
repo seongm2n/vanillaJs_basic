@@ -104,6 +104,11 @@ console.log(data);
 data[1] = "Shin-coding";
 console.log(data);
 
-//
+//삭제
+const data = [1,2,3,"Seongmin","Shin-coding"];
+console.log(data);
+data.splice(1, 3) //1번 부터 3개를 삭제
+console.log(data);
 
+//
 
