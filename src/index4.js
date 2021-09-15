@@ -43,9 +43,10 @@ const data = {
     return "Hello! You can do it!"
   }
 } 
-for (let property in data){
-  console.log(property, data[property]); //
+for (let property in data){              //property대신 key를 써도 
+  console.log(property, data[property]); //객체의 프로퍼티(키)를 반복할 때마다 반환
 }
+
 
 //while
 let i = 0;
