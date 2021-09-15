@@ -79,7 +79,12 @@ console.log(data);
 console.log(data.length);
 
 //
+const data = new Array();
+data[0] = 1;
+data[1] = 2;
+console.log(data);
 
+//
 
 
 
