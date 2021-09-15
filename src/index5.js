@@ -32,7 +32,23 @@ printData();
 //이름만 보면 이해하기 어려운 구조 분해 할당은 배열이나 객체의 속성을 해체해서, 값을 개별 변수에 대입할 수 있게 하는 문법
 //객체와 배열을 좀 더 쉽게 다루는 문법으로 이해하면 됨
 
+const data = {
+  name : "Seongmin",
+  age : 27,
+  hobby : "coding"
+};
+let {name, age} = data; //내가 가지고 오고 싶은 프로퍼티만 정확히 쓴다.
+console.log(name, age);
 
+//
+const data = {
+  name : "Seongmin",
+  age : 27,
+  hobby : "coding"
+};
+
+const { name: myName, age:myAge, special="python"} = data; //프로퍼티 수정가능
+console.log(myName, myAge, special);
 
 
 
