@@ -161,4 +161,14 @@ console.log(data3[0][2]);
 
 //3. 다양한 배열 관련 기능(함수)
 
+//push
+const data = [1,2,3];
+data.push(5);
+data.push("Seongmin")
+console.log(data);
 
+//pop
+
+//shift
+
+//
