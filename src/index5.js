@@ -56,7 +56,31 @@ console.log(myName, myAge);
 
 //(2) 배열 분해 할당
 //배열의 각 아이템을 별도 변수에 할당하는 문법
+let data = [1, 2, 3];
+const [item1, item2, item3]= data;
+console.log(item1, item2);
 
+//
+let data = [1, 2, 3];
+const [item1, item2, item3, item4, item5]= data;
+console.log(item1, item2, item3, item4, item5);
 
+//
+let data = [1, 2, 3];
+const [, , item3, item4, item5]= data;
+console.log(item3, item4, item5);
 
+//
+let data = [1, 2, 3];
+const [item3, ...item4]= data; //...이후의 값을 별도의 배열로 출력
+console.log(item3, item4);
 
+//
+let data = [1, 2, 3];
+const [item3, ...item4,item5]= data; //에러 -> ...은 마지막 변수에만 적용이 된다.
+console.log(item3, item4,item5);
+
+//
+let data = [1, 2, 3];
+const [item3,item4, item5, item6="Seongmin"]= data;
+console.log(item3, item4, item5, item6); //디폴트값 출력
