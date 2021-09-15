@@ -85,7 +85,10 @@ data[1] = 2;
 console.log(data);
 
 //
-
+const data = new Array();
+data[1] = 1;
+data[2] = 2;
+console.log(data); //결과값은 [undefined, 1 , 2] ->특정번호로 배열을 한다면
 
 
 
