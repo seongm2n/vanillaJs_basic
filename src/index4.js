@@ -53,3 +53,11 @@ while (i < 5) {
   console.log(i);
   i++;
 }
+
+//continue와 break
+for (let i = 0; i < 5; i++){
+  if (i === 3){
+    continue; // i가 3이되면 넘긴다.
+  }
+  console.log(i);
+}
