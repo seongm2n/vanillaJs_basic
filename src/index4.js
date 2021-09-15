@@ -212,6 +212,8 @@ const data2 = data1.map(item => item * 2); // 각각의 아이템이 어떻게 �
 console.log(data2);
 
 //indexOf : 배열에서 지정한 데이터가 위차한 인덱스 번호를 리턴
+const data1 = [1, 2, "Seongmin", 6];
+console.log(data1.indexOf("Seongmin"));
 
 //findIndex : 배열의 아이템이 객체일 경우, 해당 객체에서 지정한 데이터 위치를 찾을 수 있는 방법을 제공함
 
