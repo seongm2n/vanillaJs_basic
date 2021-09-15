@@ -216,6 +216,18 @@ const data1 = [1, 2, "Seongmin", 6];
 console.log(data1.indexOf("Seongmin"));
 
 //findIndex : 배열의 아이템이 객체일 경우, 해당 객체에서 지정한 데이터 위치를 찾을 수 있는 방법을 제공함
+const data = [
+  { //인덱스 번호 0
+    id : 1,
+    name : "Seongmin Shin"
+  },
+  { //인덱스 번호 1
+    id : 2,
+    name : "Sara"
+  }
+];
+console.log(data.indexOf("Sara")); //찾을 수 없음
+console.log(data.findIndex(item => item.name === "Sara")); //객체 안에 있는 값을 찾기위해
 
 //find : findIndex와 유사하지만, 지정한 데이터 위치를 리턴하는 것이 아니라, 지정한 데이터가 들어 있는 객체를 리턴함
 
