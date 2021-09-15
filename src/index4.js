@@ -245,4 +245,6 @@ console.log(data.findIndex(item => item.name === "Sara")); //객체 안에 있�
 console.log(data.find(item => item.name === "Sara"));  //해당 객체 자체를 가져오기
 
 //filter : 배열에서 특정 조건에 맞는 아이템만 추출할 때 사용하는 기능
-
+let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let even = data.filter(item => item % 2 === 0);
+console.log(even, typeof even);
