@@ -173,7 +173,13 @@ console.log(data.pop()); //3
 console.log(data); //[1,2]
 
 //shift : 배열의 첫 번째 아이템을 삭제하고, 뒤에 있는 아이템을 앞으로 당김
+const data = [1,2,3];
+data.shift(); // 첫 번째 1을 삭제
+console.log(data); //[2,3]  뒤에 있는 아이템을 앞으로 당김
 
 //concat : 두 배열 합치기
+
+
+
 
 //join
