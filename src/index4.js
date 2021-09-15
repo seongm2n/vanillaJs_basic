@@ -201,6 +201,10 @@ let data2 = data1.slice(1,3); //1번부터 (3-1)2번까지 가져오겠다.
 console.log(data2);
 
 //forEach : for문을 대체해서, 간단히 배열의 각 아이템을 가져올 수 있는 함수
+const data1 = [1,2,3,4,5,6];
+data1.forEach(item => { //arrow함수
+  console.log(item);
+})
 
 //map : 배열의 각 아이템에 정의한 함수를 적용해서, 새로운 배열을 리턴하는 함수
 
