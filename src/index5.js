@@ -86,13 +86,41 @@ const [item3,item4, item5, item6="Seongmin"]= data;
 console.log(item3, item4, item5, item6); //디폴트값 출력
 
 //(3) 유용한 구조 분해 할당 문법 활용 팁
-//변수값 교환하기
-//함수 리턴시 여러 데이터 넘겨주기
-//문자열 분리해서, 각각의 변수에 대입하기
+//(3)-1. 변수값 교환하기
 
+let a = 1;
+let b = 2;
+let c = a;
+a = b;
+b = c;
+console.log(a,b);
 
+//위에 부분을 간략하게 쓰면
+let a = 1;
+let b = 2;
+[a,b] = [b,a];
+console.log(a,b);
 
+//(3)-2. 함수 리턴시 여러 데이터 넘겨주기
+function getData(){
+  return[1,2,3];
+}
 
+let [a,b,c] = getData();
+console.log(a,b,c);
+
+//(3)-3. 문자열 분리해서, 각각의 변수에 대입하기
+//split()
+
+//구분할 인자를 넣어주지 않는다고 해서,디폴트로 ' '로 구분되지는 않으므로, 명시적으로 ' '를 인자로 넣어줘야함
+let data = "seongmin, shin-coding, coding";
+console.log(data.split(' ')); 
+console.log(data.split(',')); 
+
+//split()로 문자열을 분리해서, 각각의 변수에 대입하기
+let data = "seongmin, shin-coding, coding";
+let [name, brand, hobby] = data.split(','); //명시적으로 ''를 인자로 넣어줘야 함
+console.log(name,brand); 
 
 //4. Rest 파라미터
 //5. Spread 파라미터
