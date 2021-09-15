@@ -171,3 +171,4 @@ const data1 = [1,2,3];
 const data2 = [0, ...data1, 4, 5]; //내가 끼워 넣고 싶은 곳에 넣을 수 있다.
 
 console.log(data2); //[0,1,2,3,4,5] 
+
