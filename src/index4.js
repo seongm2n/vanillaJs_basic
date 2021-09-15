@@ -48,14 +48,14 @@ for (let property in data){              //property대신 key를 써도
 }
 
 
-//while
+// 2. while
 let i = 0;
 while (i < 5) {
   console.log(i);
   i++;
 }
 
-//continue와 break 문
+//3. continue와 break 문
 //continue 문
 //현재 반복 횟수에서, continue 다음의 반복 코드를 수행하지 않고, 다음 반복 횟수로 
 for (let i = 0; i < 5; i++){
@@ -76,7 +76,7 @@ for (let i = 0; i < 5; i++){
 
 //JS 배열문
 
-//JS배열 CRUD
+//1. JS배열 CRUD
 //js배열 생성(CRUD의 Create)
 //[]괄호를 사용하고 내부에서 아이템을 콤마(,)로 구분해서 넣으면 됨
 //객체와 마찬가지로, 새로운 배열로 배열 변수의 배열을 덮어씌우는 경우는 많지 않으므로, 배열 변수 선언시 const를 많이 사용
@@ -131,7 +131,7 @@ console.log(data);
 data.splice(1, 3) //1번 부터 3개를 삭제
 console.log(data);
 
-//특별한 형태의 js배열
+//2. 특별한 형태의 js배열
 //js배열도 다양한 형태의 배열이 가능함 
 const data = [1,2,3,"Seongmin", null]; //다양한 데이터 타입을 아이템으로 가질 수 있음
 const data2 = [       // {}괄호는 객체 리터럴을 통한 객체로 인지하며, 객체도 아이템으로 선언 가능
@@ -158,3 +158,7 @@ console.log(data2[0].name);
 
 //배열 안에 배열
 console.log(data3[0][2]); 
+
+//3. 다양한 배열 관련 기능(함수)
+
+
