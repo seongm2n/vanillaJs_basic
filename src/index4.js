@@ -230,6 +230,19 @@ console.log(data.indexOf("Sara")); //찾을 수 없음
 console.log(data.findIndex(item => item.name === "Sara")); //객체 안에 있는 값을 찾기위해
 
 //find : findIndex와 유사하지만, 지정한 데이터 위치를 리턴하는 것이 아니라, 지정한 데이터가 들어 있는 객체를 리턴함
+const data = [
+  { //인덱스 번호 0
+    id : 1,
+    name : "Seongmin Shin"
+  },
+  { //인덱스 번호 1
+    id : 2,
+    name : "Sara"
+  }
+];
+console.log(data.indexOf("Sara")); //찾을 수 없음
+console.log(data.findIndex(item => item.name === "Sara")); //객체 안에 있는 값을 찾기위해, 인덱스 번호 리턴
+console.log(data.find(item => item.name === "Sara"));  //해당 객체 자체를 가져오기
 
 //filter : 배열에서 특정 조건에 맞는 아이템만 추출할 때 사용하는 기능
 
