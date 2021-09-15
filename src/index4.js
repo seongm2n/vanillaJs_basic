@@ -184,4 +184,10 @@ const data3 = data1.concat(data2); //[1, 2, "Seongmin", 3]
 console.log(data3);
 
 //join : 아이템 사이에 특정 문자열을 넣어서, 모든 아이템을 함쳐서, 하나의 문자열로 만들어줌
+const data1 = [1, 2, 3, 4, 5];
+let data2 = data1.join("*");
+console.log(data2, typeof data2);
+
+//reverse
+
 
