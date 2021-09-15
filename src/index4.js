@@ -161,14 +161,19 @@ console.log(data3[0][2]);
 
 //3. 다양한 배열 관련 기능(함수)
 
-//push
+//push : 배열의 끝에 아이템 추가
 const data = [1,2,3];
 data.push(5);
 data.push("Seongmin")
 console.log(data);
 
-//pop
+//pop : 배열의 끝에 있는 아이템을 리턴해주고, 해당 아이템은 배열에서 삭제
+const data = [1,2,3];
+console.log(data.pop()); //3
+console.log(data); //[1,2]
 
-//shift
+//shift : 배열의 첫 번째 아이템을 삭제하고, 뒤에 있는 아이템을 앞으로 당김
 
-//
+//concat : 두 배열 합치기
+
+//join
