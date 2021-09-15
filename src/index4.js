@@ -54,10 +54,30 @@ while (i < 5) {
   i++;
 }
 
-//continue와 break
+//continue와 break 문
+//continue 문
+//현재 반복 횟수에서, continue 다음의 반복 코드를 수행하지 않고, 다음 반복 횟수로 
 for (let i = 0; i < 5; i++){
   if (i === 3){
     continue; // i가 3이되면 넘긴다.
   }
   console.log(i);
 }
+
+//break 문
+//반복문 안에서, 더이상 반복문을 수행하지 않고, 반복문 밖으로 빠져나오기(반복문 종료)
+for (let i = 0; i < 5; i++){
+  if (i === 3){
+    break; // i가 3이되면 반복문을 나가게되고, 3은 실행이 안된다.
+  }
+  console.log(i);
+}
+
+//JS 배열문
+
+
+
+
+
+
+
