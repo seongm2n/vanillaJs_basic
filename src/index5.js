@@ -50,8 +50,15 @@ const data = {
 const { name: myName, age:myAge, special="python"} = data; //프로퍼티 수정가능
 console.log(myName, myAge, special);
 
+//
+const data = {
+  name : "Seongmin",
+  age : 27,
+  hobby : "coding"
+};
 
+const { name: myName, age: myAge = 25} = data; //디폴트값이 없다면 지정한 값이 출력
+console.log(myName, myAge);
 
-
-
+//
 
