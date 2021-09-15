@@ -248,3 +248,4 @@ console.log(data.find(item => item.name === "Sara"));  //해당 객체 자체를
 let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let even = data.filter(item => item % 2 === 0);
 console.log(even, typeof even);
+
