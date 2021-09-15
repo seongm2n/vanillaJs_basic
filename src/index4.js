@@ -195,6 +195,10 @@ data1.reverse();
 console.log(data1); //[6,5,4,3,2,1]
 
 //slice : 배열의 일부분 반환
+//slice(a,b) : a 인덱스부터 시작해서, b-1 인덱스까지 추출
+const data1 = [1,2,3,4,5,6];
+let data2 = data1.slice(1,3); //1번부터 (3-1)2번까지 가져오겠다.
+console.log(data2);
 
 //forEach : for문을 대체해서, 간단히 배열의 각 아이템을 가져올 수 있는 함수
 
