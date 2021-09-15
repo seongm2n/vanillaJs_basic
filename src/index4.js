@@ -46,3 +46,10 @@ const data = {
 for (let property in data){
   console.log(property, data[property]); //
 }
+
+//while
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
