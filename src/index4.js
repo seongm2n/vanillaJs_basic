@@ -178,8 +178,10 @@ data.shift(); // 첫 번째 1을 삭제
 console.log(data); //[2,3]  뒤에 있는 아이템을 앞으로 당김
 
 //concat : 두 배열 합치기
+const data1 = [1,2];
+const data2 = ['Seongmin', 3];
+const data3 = data1.concat(data2); //[1, 2, "Seongmin", 3]
+console.log(data3);
 
+//join : 아이템 사이에 특정 문자열을 넣어서, 모든 아이템을 함쳐서, 하나의 문자열로 만들어줌
 
-
-
-//join
