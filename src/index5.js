@@ -149,3 +149,25 @@ function getData(...rest, a, b) //이와 같은 형태는 안됨
 function getData(a, b, ...rest) //반드시 ...변수는 맨 마지막에 나와야 함
 
 //5. Spread 파라미터
+//Rest 파라미터와 마찬가지로 ...을 붙여서 정의하는 문법
+//iterable한 변수 앞에 붙여서, 해당 변수의 데이터를 개별 아이템으로 분리함 (iterable이란 반복 가능한 객체를 의미하며, 배열, 문자열 등을 의미함
+let data = [1,2,3];
+console.log(...data); //1 ,2, 3 출력
+
+const data= [1, 2, 3];
+console.log(data); //[1,2,3]으로 출력
+console.log(...data); //각각의 값으로 분리헤서 출력 -> 1,2,3출력
+console.log(data[0], data[1], data[2]); // 1,2,3출력
+
+//힘수 인자에 맞추어, 배열의 각 아이템을 대입하고 싶을 경우
+function func(a,b,c,d){
+  console.log(b,c);
+}
+const data = [1, 2, 3, 4];
+func(...data);
+
+//기존 배열로 새로운 배열 구성하기
+const data1 = [1,2,3];
+const data2 = [0, ...data1, 4, 5]; //내가 끼워 넣고 싶은 곳에 넣을 수 있다.
+
+console.log(data2); //[0,1,2,3,4,5] 
