@@ -15,6 +15,12 @@ data.length === 0 ? console.log("빈 배열"):console.log("배열이 차있음")
 
 //2. 함수의 기본 인자(파라미터)값 설정
 
+function printData(name) {
+  console.log(name);
+}
+printData(); // 값이 정해지지 않아서 undefined로 출력
+
+
 
 
 
