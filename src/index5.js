@@ -32,33 +32,31 @@ printData();
 //이름만 보면 이해하기 어려운 구조 분해 할당은 배열이나 객체의 속성을 해체해서, 값을 개별 변수에 대입할 수 있게 하는 문법
 //객체와 배열을 좀 더 쉽게 다루는 문법으로 이해하면 됨
 
+//(1) 객체 구조 분해 할당
 const data = {
   name : "Seongmin",
   age : 27,
   hobby : "coding"
 };
-let {name, age} = data; //내가 가지고 오고 싶은 프로퍼티만 정확히 쓴다.
+//동일한 프로퍼티명을 써줘야, 해당 프로퍼티에 맞는 값이 대입됨(내가 가지고 오고 싶은 프로퍼티만 정확히 쓴다.)
+let {name, age} = data; 
 console.log(name, age);
 
-//
-const data = {
-  name : "Seongmin",
-  age : 27,
-  hobby : "coding"
-};
-
-const { name: myName, age:myAge, special="python"} = data; //프로퍼티 수정가능
-console.log(myName, myAge, special);
-
-//
-const data = {
-  name : "Seongmin",
-  age : 27,
-  hobby : "coding"
-};
-
-const { name: myName, age: myAge = 25} = data; //디폴트값이 없다면 지정한 값이 출력
+//프로퍼티명과 다른 변수명을 사용하고자 할 경우, (대입할 프로퍼티명 : 다른 변수명)의 형태로 써줘야 함
+let { name: myName, age:myAge} = data; 
 console.log(myName, myAge);
 
-//
+// 가져올 프로퍼티명을 다른 변수에 저장하되, 해당 프로퍼티명이 객체 안에 없을 경우, 다른 변수에 디폴트값을 대입하기
+let { name: myName, age:myAge, special="python"} = data; 
+console.log(myName, myAge, special);
+
+//가져올 프로퍼티가 정의 되어 있지 않을 경우에는 디폴트값으로 대입하게끔 할 수 있다.
+let { name: myName, age: myAge = 25} = data; 
+console.log(myName, myAge);
+
+//(2) 배열 분해 할당
+//배열의 각 아이템을 별도 변수에 할당하는 문법
+
+
+
 
