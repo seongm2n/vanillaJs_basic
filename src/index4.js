@@ -97,6 +97,13 @@ data[1] = 2;
 console.log(data[0], data[1], data[data.length - 1]);
 
 //
+const data = new Array();
+data[0] = 1;
+data[1] = 2;
+console.log(data);
+data[1] = "Shin-coding";
+console.log(data);
 
+//
 
 
