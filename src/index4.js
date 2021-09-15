@@ -74,6 +74,11 @@ for (let i = 0; i < 5; i++){
 }
 
 //JS 배열문
+const data = [1, 2, 3, "Seongmin", true];
+console.log(data);
+console.log(data.length);
+
+//
 
 
 
