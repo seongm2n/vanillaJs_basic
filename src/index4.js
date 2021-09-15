@@ -75,55 +75,86 @@ for (let i = 0; i < 5; i++){
 }
 
 //JS 배열문
+
+//JS배열 CRUD
+//js배열 생성(CRUD의 Create)
+//[]괄호를 사용하고 내부에서 아이템을 콤마(,)로 구분해서 넣으면 됨
+//객체와 마찬가지로, 새로운 배열로 배열 변수의 배열을 덮어씌우는 경우는 많지 않으므로, 배열 변수 선언시 const를 많이 사용
 const data = [1, 2, 3, "Seongmin", true];
 console.log(data);
+//배열 길이는 length로 확인 가능
 console.log(data.length);
 
-//
+//객체처럼 생성도 가능
 const data = new Array();
+            //빈 배열을 객체처럼 선언 후, 다음과 같이 직접 데이터를 넣어줄 수 있음
 data[0] = 1;
 data[1] = 2;
 console.log(data);
 
-//
+            //특정번호로 배열을 한다면 결과값은 [undefined, 1 , 2]
 const data = new Array();
 data[1] = 1;
 data[2] = 2;
-console.log(data); //결과값은 [undefined, 1 , 2] ->특정번호로 배열을 한다면
+console.log(data); 
 
-//
-const data = new Array();
+//js 배열 읽기(CRUD의 Read)
+//0번 부터 시작하는 인덱스 번호로 각 아이템을 읽을 수 있음
+const data = new Array(1, 2, 3, "Seongmin", true);
+console.log(data[0]); //첫번째 아이템
+console.log(data[1]);//두번째 아이템
+console.log(data[data.length - 1]); // 마지막 아이템
+                          
+const data = new Array();  //빈 배열을 선언 후, 배열 읽기
 data[0] = 1;
 data[1] = 2;
-console.log(data[0], data[1], data[data.length - 1]);
+console.log(data[0], data[1], data[data.length - 1]); 
 
-//
-const data = new Array();
+//js배열 수정(CRUD의 Update)
+//인덱스 번호로 각 아이템을 수정할 수 있음
+const data = [1, 2, 3, "Seongmin", true];  
+console.log(data);
+data[1] = "Shin-coding";
+console.log(data);
+
+const data = new Array();  //빈 배열을 선언 후, 배열 수정
 data[0] = 1;
 data[1] = 2;
 console.log(data);
 data[1] = "Shin-coding";
 console.log(data);
 
-//삭제
+//js배열 삭제(CRUD의 Delete)
+//배열변수.splice(삭제를 시작할 인덱스 번호,삭제를 시작할 인덱스 번호부터 몇 개를 삭제할 지의 갯수)
 const data = [1,2,3,"Seongmin","Shin-coding"];
 console.log(data);
 data.splice(1, 3) //1번 부터 3개를 삭제
 console.log(data);
 
-//
-const data = [1,2,3,"Seongmin", null];
-const data2 = [
+//특별한 형태의 js배열
+//js배열도 다양한 형태의 배열이 가능함 
+const data = [1,2,3,"Seongmin", null]; //다양한 데이터 타입을 아이템으로 가질 수 있음
+const data2 = [       // {}괄호는 객체 리터럴을 통한 객체로 인지하며, 객체도 아이템으로 선언 가능
   {name: "Seongmin", age: 27},
   {name: "Sara", age: 29}
 ];
 
-//참고
+//참고 -> 배열 안에 배열도 가능
 const data3 = [
   [1,2,3],
   [4,5,6]
 ];
 
+//여러 라인으로 선언 가능
+const data4 = [
+  "Seongmin",
+  "Shin-coding",
+  1
+];
+
+//개별 아이템이 객체일 경우, 인덱스 번호로 객체의 프로퍼티도 접근 가능
 console.log(data[0]);
 console.log(data2[0].name);
-console.log(data3[0][2]); //배열 안에 배열
+
+//배열 안에 배열
+console.log(data3[0][2]); 
