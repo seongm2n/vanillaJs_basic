@@ -60,27 +60,39 @@ let data = [1, 2, 3];
 const [item1, item2, item3]= data;
 console.log(item1, item2);
 
-//
+//대입할 아이템이 없을 경우, undefined로 대입
 let data = [1, 2, 3];
 const [item1, item2, item3, item4, item5]= data;
 console.log(item1, item2, item3, item4, item5);
 
-//
+//콤마를 통해 필요하지 않은 아이템은 건너 뛸수 있음
 let data = [1, 2, 3];
 const [, , item3, item4, item5]= data;
 console.log(item3, item4, item5);
 
-//
+//...이후의 값을 별도의 배열로 출력
 let data = [1, 2, 3];
-const [item3, ...item4]= data; //...이후의 값을 별도의 배열로 출력
+const [item3, ...item4]= data; 
 console.log(item3, item4);
 
-//
+//에러 -> ...은 마지막 변수에만 적용이 된다.
 let data = [1, 2, 3];
-const [item3, ...item4,item5]= data; //에러 -> ...은 마지막 변수에만 적용이 된다.
+const [item3, ...item4,item5]= data; 
 console.log(item3, item4,item5);
 
-//
+//객체와 마찬가지로 기본값을 설정할 수 있음
 let data = [1, 2, 3];
 const [item3,item4, item5, item6="Seongmin"]= data;
 console.log(item3, item4, item5, item6); //디폴트값 출력
+
+//(3) 유용한 구조 분해 할당 문법 활용 팁
+//변수값 교환하기
+//함수 리턴시 여러 데이터 넘겨주기
+//문자열 분리해서, 각각의 변수에 대입하기
+
+
+
+
+
+//4. Rest 파라미터
+//5. Spread 파라미터
