@@ -111,4 +111,18 @@ data.splice(1, 3) //1번 부터 3개를 삭제
 console.log(data);
 
 //
+const data = [1,2,3,"Seongmin", null];
+const data2 = [
+  {name: "Seongmin", age: 27},
+  {name: "Sara", age: 29}
+];
 
+//참고
+const data3 = [
+  [1,2,3],
+  [4,5,6]
+];
+
+console.log(data[0]);
+console.log(data2[0].name);
+console.log(data3[0][2]); //배열 안에 배열
