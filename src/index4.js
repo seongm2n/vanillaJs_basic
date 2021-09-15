@@ -35,4 +35,14 @@ console.log(Object.keys(data)); // 프로퍼티 키 리스트, 즉 [키,키,키]
 console.log(Object.values(data)); //프로퍼티 값 리스트, 즉[값,값,값]등으로 이루어진 배열 반환
 
 //for...in문
-
+const data = {
+  name : "Seongmin",
+  age : 27,
+  brand : "shin-coding",
+  get_message : function(){
+    return "Hello! You can do it!"
+  }
+} 
+for (let property in data){
+  console.log(property, data[property]); //
+}
