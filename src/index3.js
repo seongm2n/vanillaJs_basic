@@ -329,3 +329,4 @@ const seongmin = new Animal('Seongmin');
 console.log(seongmin.hasOwnProperty('name')); //내부 선언 -> true
 console.log(seongmin.hasOwnProperty('age'));  //외부 선언 -> false
 console.log(seongmin.hasOwnProperty('get_message()'));  //프로퍼티가 아니라 메서드라  -> false
+  
