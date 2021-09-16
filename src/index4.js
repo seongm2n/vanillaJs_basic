@@ -250,3 +250,4 @@ let even = data.filter(item => item % 2 === 0);
 console.log(even, typeof even);
 
 
+
