@@ -56,7 +56,7 @@ getData();
   function getData() {
     console.log("Hello World!);
   }
-
+    
   //함수 표현식             
   let getData = function(){
     console.log("Hello World");
@@ -77,16 +77,23 @@ getData();
 
 //2-(1) Global Scope 전역 스코프
 //블록 또는 함수 안에서 선언되지 않고, 외부에서 선언된 변수/함수로 함수 또는 블록 포함 모든 코드에서 사용 가능
-//let과 const는 블록 scope
+//2-(2) let과 const는 블록 scope
 //블록 scope는 {}로 이루어진 영역을 의미함
 //let과 const로 선언된 변수는 블록 안에서 선언이 되었다면, 블록 밖에서는 유효하지 않음
-
-let data = 1;
-function getData(){
-  let item = 2;
+{
+  const name = "Seongmin";
+  console.log(name);
 }
+console.log(name); //unfined 또는 에러
 
-//
+//블록 밖에서 let과 const로 선언된 변수는 블록 안에서도 유효함
+let name = "Seongmin";
+{
+  console.log(name);
+}
+console.log(name);   
+
+//블록 안에서 또다른 블록이 있을 수 있음    
 {
   let item1 = 1;
   {
@@ -94,8 +101,8 @@ function getData(){
   console.log(item1);
   }
 }
-console.log(item1);
-
+console.log(item1); //item1이 선언된 블록 밖에 있기 때문에, unfined 또는 에러
+ 
 //if와 for문에서도 블록을 사용하고 있으므로, 해당 블록 안에서 let또는 const로 선언된 변수들은 블록scope가 적용됨
 const item1 = 1;
 if (item1 === 1){
@@ -104,21 +111,34 @@ if (item1 === 1){
 }
 console.log(item2); //item2가 선언된 블록 밖에서 호출했으므로, undefined 또는 에러 
 
-//
+// 함수 선언도 마찬가지로 함수 내부에서 선언된 함수는 외부에서 호출할 수 없음
 {
 function getData(){
     let data = 1;
   }
 }
-console.log(getData());
+console.log(getData());//함수 외부에서 호출했으므로,에러
 
-//
+//2-(3) var키워드와 함수 scope
+//var키워드는 함수 scope를 가짐
+//함수 안에서 var키워드로 선언된 변수는 함수 외부에서 유효하지 않지만, 
+//블록안에서 var키워드로 선언된 변수는 블록 외부에서도 유효함(이를 함수 scope라고 함)
+//블록 외부에서 var키워드로 선언된 변수는 당연히 블록 안에서도 참조 가능
 var data = 1;
 function func(){
   var item = 2;
-  console.log(data);
+  console.log(data); //블록 안에서도 정상 동작
 }
+    
+//함수 안에서 var 키워드로 선언된 변수는 함수 외부에서는 참고 불가(일반적인 프로그래밍 언어와 동일)
+var data = 1;
+function func(){  
+  console.log(data); //블록 안에서도 정상 동작
+}
+func();
+console.log(data); 
 
+//함수가 아니라, 블록 안에서 var키워드로 선언된 변수는 블록 외부에서 선언된 변수와 동일하게 취급됨(블록은 무시함)
 {
   var item2 = 3;
 }
@@ -126,4 +146,15 @@ function func(){
 func();
 console.log(item2);
 
-//
+//2-(4) 전역변수와 지역변수
+//함수에서 선언된 변수를 지역 변수라고 하며, 전역 scope를 가진 변수를 전역변수라고 이야기함
+    //동일한 이름을 가진 전역변수와 지역변수가 있으면, 함수 안에서는 지역 변수를 우선해서 사용
+
+var data = 1;
+function func(){  
+  var data = 2;
+  console.log(data); //블록 안에서도 정상 동작
+}
+func();
+console.log(data);
+console.log(data); 
